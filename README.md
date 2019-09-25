@@ -8,6 +8,6 @@ Code in roman.js is directly copied from the frontend version. One way to share 
 
 # Docker
 
-### docker build -t <your username>/node-web-app .
-### docker run -p 49160:3000 -d <your username>/node-web-app
+### docker build -t devname/roman-backend .
+### docker run -p 49160:3000 -d devname/roman-backend
 ### Use postman or some other way to access localhost:49160
