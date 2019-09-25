@@ -4,7 +4,7 @@ const port = 3000
 
 const romanToArabic = require('./roman')
 
-app.post('/', (req, res) => { 
+app.get('/', (req, res) => { 
 
     const roman = req.query.roman;
 
