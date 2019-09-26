@@ -1,8 +1,8 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const app = express();
+const port = 3000;
 
-const romanToArabic = require('./roman')
+const romanToArabic = require('./roman');
 
 app.get('/', (req, res) => { 
 
@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
     // Cast number to string, otherwise express thinks we are sending a invalid status code.
     res.send(romanToArabic(roman) + '');
 
-})
+});
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
